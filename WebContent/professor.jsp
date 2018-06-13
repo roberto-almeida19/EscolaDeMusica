@@ -17,8 +17,16 @@
 				<input type="text" id="nomeCompleto" class="form-control" placeholder="Digite aqui o nome completo">
 			</div>
 			<div class="form-group">
+				<div class="row">
+				<div class="col-sm-3">
 				<label for="cpf">CPF:</label>
-				<input type="text" id="cpf" class="form-control-sm" placeholder="Digite aqui o CPF">
+				<input type="text" id="cpf" class="form-control" placeholder="Digite aqui o CPF">
+				</div>
+				<div class="col-sm-3">
+				<label for="omb">OMB:</label>
+				<input type="text" id="omb" class="form-control" placeholder="Digite aqui o OMB">
+				</div>				
+				</div>
 			</div>
 			
 			<fieldset class="form-group">
@@ -56,8 +64,8 @@
         	<legend class="col-form-label col-sm-1 pt-0">Instrumento:</legend>
         	<div class="col-sm-6">
         		<div class="form-control">
-        			<label for="">Instrumento</label>
-        			<select>
+        			<label for="instrumento">Instrumento</label>
+        			<select id="instrumento">
         				<option>Guitarra</option>
         				<option>Baixo</option>
         			</select> 
@@ -67,30 +75,49 @@
         
         </div>
         <div class="row">
-        <legend class="col-form-label col-sm-1 pt-0">Endereço:</legend>
+        <legend class="col-form-label col-sm pt-0">Endereço:</legend>
         	<div class="form-control">
-        	<div class="col-sm-8">
-        		<label for="rua" >Rua:</label>
-        		<input id="rua" type="text" class="form-control">
+        	<div class="col-sm-12">
+        		<label for="logradouro" >Logradouro:</label>
+        		<input id="logradouro" type="text" class="form-control">
         	</div>
-        	<div class="col-sm-2">
-        		<label for="numero">Número:</label>
-        		<input id="numero" type="text">
-        	</div></div>
-        
+			<div class="row">
+				<div class="col-sm-4">
+				<label for="numero">Número:</label>
+        		<input id="numero" type="text" class="form-control">
+			</div>
+			<div class="col-sm-4">				
+        		<label for="cep">CEP:</label>
+        		<input type="text" id="cep" class="form-control">
+        	</div>
+        	<div class="col-sm-4">
+        		<label for="complemento">Complemento:</label>
+        		<input type="text" id="complemento" class="form-control">
+			</div>
+			</div>
+        		
+        	<div class="row">
+	        	<div class="col-sm-6">
+	        		<label for="bairro">Bairro:</label>
+	        		<input type="text" id="bairro" class="form-control">
+	        	</div>
+	        	<div class="col-sm-6">
+	        		<label for="cidade">Cidade:</label>
+	        		<input type="text" id="cidade" class="form-control">
+	        	</div>
+        	</div>
+        	
+        </div>
         </div>
         <div class="row">
         	<div class="col-sm-3">
-	        	<button class="btn btn-success" value="novo" id="btn-novo">Novo</button>
+	        	<button class="btn btn-success" value="novo" id="btn-novo" type="submit">Novo</button>
 	        </div>
-	        	<button class="btn btn-success" name="cmd" value="alterar">Alterar</button>
-				<button class="btn btn-success" name="cmd" value="consultar">Consultar</button>
-				<button class="btn btn-danger" name="cmd" value="deletar">Deletar</button>        
+	        	<button class="btn btn-success" name="cmd" value="alterar" type="submit">Alterar</button>
+				<button class="btn btn-success" name="cmd" value="consultar" type="submit">Consultar</button>
+				<button class="btn btn-danger" name="cmd" value="deletar" type="submit">Deletar</button>        
         </div>
 		</form>
       </div>
-	
-	
-
 </body>
 </html>

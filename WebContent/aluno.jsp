@@ -107,11 +107,11 @@
         </div>
         <div class="row">
         	<div class="col-sm-3">
-	        	<button class="btn btn-success" value="novo" id="btn-novo">Novo</button>
+	        	<button class="btn btn-success" value="novo" id="btn-novo" type="submit">Novo</button>
 	        </div>
-	        	<button class="btn btn-success" name="cmd" value="alterar">Alterar</button>
-				<button class="btn btn-success" name="cmd" value="consultar">Consultar</button>
-				<button class="btn btn-danger" name="cmd" value="deletar">Deletar</button>        
+	        	<button class="btn btn-success" name="cmd" value="alterar" type="submit">Alterar</button>
+				<button class="btn btn-success" name="cmd" value="consultar" type="submit">Consultar</button>
+				<button class="btn btn-danger" name="cmd" value="deletar" type="submit">Deletar</button>        
         </div>
 		</form>
       </div>
