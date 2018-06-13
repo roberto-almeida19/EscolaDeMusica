@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Professor</title>
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
 	<div class="container">
 	
-		<h2 class="text-center">Alunos</h2>
+		<h2 class="text-center">Professor</h2>
 		<form>
 			<div class="form-group">
 				<label for="nomeCompleto">Nome Completo:</label>

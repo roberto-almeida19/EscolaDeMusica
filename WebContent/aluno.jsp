@@ -62,8 +62,13 @@
         		<div class="form-control">
         			<label for="instrumento">Instrumento</label>
         			<select id="instrumento">
-        				<option>Guitarra</option>
-        				<option>Baixo</option>
+        				<option value="1">Guitarra</option>
+        				<option value="2">Baixo Elétrico</option>
+        				<option value="3">Violão Popular</option>
+        				<option value="4">Violão Clássico</option>
+        				<option value="5">Piano</option>
+        				<option value="6">Bateria</option>
+        				<option value="7">Canto</option>
         			</select> 
         		
         		</div>
