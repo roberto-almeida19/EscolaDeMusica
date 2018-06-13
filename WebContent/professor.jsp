@@ -14,7 +14,7 @@
 		<form>
 			<div class="form-group">
 				<label for="nomeCompleto">Nome Completo:</label>
-				<input type="text" id="nomeCompleto" class="form-control" placeholder="Digite aqui o nome completo">
+				<input type="text" id="nome" class="form-control" placeholder="Digite aqui o nome completo">
 			</div>
 			<div class="form-group">
 				<div class="row">
@@ -34,14 +34,11 @@
     				<legend class="col-form-label col-sm-1 pt-0">Sexo:</legend>
     				<div class="col-sm-10">
        					<div class="form-check">
-          					<input class="form-check-input" type="radio" name="masculino" id="sex-masculino" value="masculino" checked>
-          					<label class="form-check-label" for="sex-masculino">Masculino</label>
+       					<select id="sexo">
+       					<option value="M">Masculino</option>
+       					<option value="F">Feminino</option>
+       					</select>
         				</div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="feminino" id="sex-feminino" value="feminino">
-          <label class="form-check-label" for="sex-feminino">
-            Feminino
-          </label>
         </div>
        </div>
 	</div>
