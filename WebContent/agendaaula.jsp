@@ -14,10 +14,13 @@
 	
 	<fieldset title="Data e Hora">
 	<legend>Data e Hora</legend>
+	
 	<label for="data">Data:</label>
 	<input type="date" id="data">
+	
 	<label for="hora">Hora:</label>
 	<input type="time">
+	
 	</fieldset>
 	<fieldset>
 	<legend>Dados</legend>

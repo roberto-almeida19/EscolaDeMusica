@@ -9,30 +9,30 @@
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
 	<div class="container">
-<forrm>
+<form action="./escola" method="post">
 	<h2>Aula do Dia:<select></select></h2>
 	<hr>
 		<fieldset>
 	<div class="row">
 		<label for="valorAula">Valor da Aula:</label>
-		<input type="text" id="valorAula">
+		<input type="text" id="valorAula" name="valorAula">
 	</div>
 	<div class="row">
 		<label for="valorDesc" >Valor de Desconto:</label>
-		<input type="text" id="valorDesc">
+		<input type="text" id="valorDesc" name="valorDesc">
 	</div>
 	<div class="row">
 		<label for="valorTotal">Valor Total:</label>
-		<input type="text" id="valorTotal">
+		<input type="text" id="valorTotal" name="valorTotal">
 	
 	</div></fieldset>
 	<div class="row">
         	<div class="col-sm-3">
-	        	<button class="btn btn-success" value="novo" id="btn-novo" type="submit">Novo</button>
+	        	<button class="btn btn-success" value="cadastroContaAula" id="btn-novo" name="acao" >Novo</button>
 	        </div>
-	        	<button class="btn btn-success" name="cmd" value="alterar" type="submit">Alterar</button>
-				<button class="btn btn-success" name="cmd" value="consultar" type="submit">Consultar</button>
-				<button class="btn btn-danger" name="cmd" value="deletar" type="submit">Deletar</button>        
+	        	<button class="btn btn-success" name="cmd" value="alterar" >Alterar</button>
+				<button class="btn btn-success" name="cmd" value="consultar" >Consultar</button>
+				<button class="btn btn-danger" name="cmd" value="deletar" >Deletar</button>        
         </div>
 
 

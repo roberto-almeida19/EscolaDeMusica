@@ -12,15 +12,15 @@
 	<div class="container">
 	
 		<h2 class="text-center">Alunos</h2>
-		<form>
+		<form method="post" action="./escola">
 			<div class="form-group">
 				<label for="nomeCompleto">Nome Completo:</label>
-				<input type="text" id="nome" class="form-control" placeholder="Digite aqui o nome completo">
+				<input type="text" id="nome" name="nome" class="form-control" placeholder="Digite aqui o nome completo">
 			</div>
 			<div class="form-group">
 				<div class="row"><div class="col-sm-3">
 				<label for="cpf">CPF:</label>
-				<input type="text" id="cpf" class="form-control" placeholder="Digite aqui o CPF">
+				<input type="text" id="cpf" name="cpf" class="form-control" placeholder="Digite aqui o CPF">
 				</div>
 				</div>
 			</div>
@@ -30,14 +30,11 @@
     				<legend class="col-form-label col-sm-1 pt-0">Sexo:</legend>
     				<div class="col-sm-10">
        					<div class="form-check">
-          					<input class="form-check-input" type="radio" name="masculino" id="sex-masculino" value="M" checked>
-          					<label class="form-check-label" for="sex-masculino">Masculino</label>
+       					<select id="sexo" name="sexo">
+       					<option value="M">Masculino</option>
+       					<option value="F">Feminino</option>
+       					</select>
         				</div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="feminino" id="sex-feminino" value="F">
-          <label class="form-check-label" for="sex-feminino">
-            Feminino
-          </label>
         </div>
        </div>
 	</div>
@@ -48,9 +45,9 @@
         	<div class="col-sm-6">
 	        	<div class="form-control">
 	        		<label for="telefone1">Telefone Fixo:</label>
-	        		<input type="text" name="telefone1" id="telefone1" placeholder="Digite aqui o telefone" ><br>
+	        		<input type="text" id="telefone1" placeholder="Digite aqui o telefone" ><br>
 	        		<label for="telefone2">Celular:</label>
-	        		<input type="text" name="telefone2" id="telefone2" placeholder="Digite aqui o telefone">
+	        		<input type="text"  id="telefone2" placeholder="Digite aqui o telefone">
 	        	</div>
         	</div>
         		
@@ -61,7 +58,7 @@
         	<div class="col-sm-6">
         		<div class="form-control">
         			<label for="instrumento">Instrumento</label>
-        			<select id="instrumento">
+        			<select id="instrumento" name="instrumento">
         				<option value="1">Guitarra</option>
         				<option value="2">Baixo Elétrico</option>
         				<option value="3">Violão Popular</option>
@@ -80,31 +77,31 @@
         	<div class="form-control">
         	<div class="col-sm-12">
         		<label for="logradouro" >Logradouro:</label>
-        		<input id="logradouro" type="text" class="form-control">
+        		<input id="logradouro" type="text" class="form-control" name="logradouro">
         	</div>
 			<div class="row">
 				<div class="col-sm-4">
 				<label for="numero">Número:</label>
-        		<input id="numero" type="text" class="form-control">
+        		<input id="numero" type="text" class="form-control" name="numero">
 			</div>
 			<div class="col-sm-4">				
         		<label for="cep">CEP:</label>
-        		<input type="text" id="cep" class="form-control">
+        		<input type="text" id="cep" class="form-control" name="cep">
         	</div>
         	<div class="col-sm-4">
         		<label for="complemento">Complemento:</label>
-        		<input type="text" id="complemento" class="form-control">
+        		<input type="text" id="complemento" class="form-control" name="complemento"> 
 			</div>
 			</div>
         		
         	<div class="row">
 	        	<div class="col-sm-6">
 	        		<label for="bairro">Bairro:</label>
-	        		<input type="text" id="bairro" class="form-control">
+	        		<input type="text" id="bairro" class="form-control" name="bairro">
 	        	</div>
 	        	<div class="col-sm-6">
 	        		<label for="cidade">Cidade:</label>
-	        		<input type="text" id="cidade" class="form-control">
+	        		<input type="text" id="cidade" class="form-control" name="cidade">
 	        	</div>
         	</div>
         	
@@ -112,11 +109,11 @@
         </div>
         <div class="row">
         	<div class="col-sm-3">
-	        	<button class="btn btn-success" value="novo" id="btn-novo" type="submit">Novo</button>
+	        	<button class="btn btn-success" value="cadastroAluno" id="btn-novo" name="acao">Novo</button>
 	        </div>
-	        	<button class="btn btn-success" name="cmd" value="alterar" type="submit">Alterar</button>
-				<button class="btn btn-success" name="cmd" value="consultar" type="submit">Consultar</button>
-				<button class="btn btn-danger" name="cmd" value="deletar" type="submit">Deletar</button>        
+	        	<button class="btn btn-success" name="cmd" value="alterar" >Alterar</button>
+				<button class="btn btn-success" name="cmd" value="consultar">Consultar</button>
+				<button class="btn btn-danger" name="cmd" value="deletar" >Deletar</button>        
         </div>
 		</form>
       </div>
